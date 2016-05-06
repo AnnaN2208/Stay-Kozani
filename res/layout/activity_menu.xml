@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/grey1"
+	tools:context="com.example.staykozani.MenuActivity"
+    android:orientation="vertical" >
+
+    <TextView
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/looking_for"
+		android:textStyle="bold"
+		android:textColor="@color/white"
+		android:padding="10dp"
+		android:background="@color/red"
+		android:textSize="30sp"/>
+
+    <Button 
+        android:id="@+id/monumentsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:layout_marginTop="10dp"
+        android:text="@string/monuments"
+        android:textColor="@color/grey3"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="start|center_vertical"
+        android:drawableLeft="@drawable/ic_columns4"
+        android:drawableStart="@drawable/ic_columns4"
+        android:background="@drawable/button"/>
+    
+    <Button 
+        android:id="@+id/entertainmentButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:text="@string/entertainment"
+        android:textColor="@color/grey3"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="start|center_vertical"
+        android:drawableLeft="@drawable/ic_quaver11"
+        android:drawableStart="@drawable/ic_quaver11"
+        android:background="@drawable/button"/>
+    
+    <Button 
+        android:id="@+id/restaurantButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:text="@string/restaurants"
+        android:textColor="@color/grey3"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="start|center_vertical"
+        android:drawableLeft="@drawable/ic_restaurant26"
+        android:drawableStart="@drawable/ic_restaurant26"
+        android:background="@drawable/button"/>
+    
+    <Button 
+        android:id="@+id/accommodationButton"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.25"
+        android:text="@string/accommodation"
+        android:textColor="@color/grey3"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="start|center_vertical"
+        android:drawableLeft="@drawable/ic_hotel16"
+        android:drawableStart="@drawable/ic_hotel16"
+        android:background="@drawable/button"/>
+    
+    
+</LinearLayout>

@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/grey1"
+	tools:context="com.example.staykozani.ChoiceActivity"
+	android:orientation="vertical">
+	
+    <TextView
+        android:id="@+id/categoryTextView"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/category"
+		android:textStyle="bold"
+		android:textColor="@color/white"
+		android:padding="10dp"
+		android:background="@color/red"
+		android:textSize="30sp"
+		android:drawable="@drawable/ic_columns"/>
+    
+	<ScrollView 
+		android:id="@+id/scrollView1"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/grey1"
+		android:orientation="vertical">
+	
+		<TableLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+	        android:layout_gravity="top"
+	        android:shrinkColumns="*"
+	        android:stretchColumns="*" 
+		    android:id="@+id/choicesTableLayout">
+		    
+		</TableLayout>
+	</ScrollView>
+</LinearLayout>
+		
+    
+    
+
+

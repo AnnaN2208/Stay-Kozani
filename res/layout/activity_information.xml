@@ -1,0 +1,83 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="10dp"
+    android:background="@color/grey1"
+    tools:context="com.example.staykozani.InformationActivity" >
+	
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+    <TextView
+        android:id="@+id/POINameTextView"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/category"
+		android:textStyle="bold"
+		android:textColor="@color/white"
+		android:padding="10dp"
+		android:background="@color/red"
+		android:textSize="30sp"
+		android:drawable="@drawable/ic_pointer"/>
+    
+    <ImageView
+        android:id="@+id/POIImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="250dp"
+        android:contentDescription="@string/desc"
+        android:scaleType="fitCenter" />
+    
+     <TextView
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="10dp"
+	    android:text="@string/information"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	    android:textColor="@color/grey3"
+		android:textStyle="bold"/>
+    
+    <TextView
+        android:id="@+id/POIDescriptionTextView"
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:textColor="@color/grey3"
+        android:text="@string/desc" />
+   
+    <Button
+	    android:id="@+id/POIMapButton"
+        android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="40dp"
+	    android:layout_marginLeft="40dp"	    	   
+	    android:textColor="@color/grey3"
+        android:textStyle="bold"
+       	android:text="@string/map"
+       	android:background="@drawable/button"/>
+    
+    <Button
+	    android:id="@+id/viewMoreButton"
+        android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:layout_marginRight="40dp"
+	    android:layout_marginLeft="40dp"	        	   
+	    android:textColor="@color/grey3"
+        android:textStyle="bold"
+       	android:text="@string/view_more"
+       	android:background="@drawable/button"/>
+
+        
+    </LinearLayout>
+    
+</ScrollView>
